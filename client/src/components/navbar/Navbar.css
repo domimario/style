@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Navbar title */
+.navbar h3 {
+  font-family: Open Sans, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-left: 16px;
+  width: 99px;
+  height: 27px;
+}
+
+
+/* Navbar Profile Div */
+.navbar-profile {
+  display: flex;
+}
+
+
+/* Navbar Profile User Name */
+.navbar-profile h4 {
+  font-family: Open Sans, sans-serif;
+  font-weight: normal;
+  color: white;
+  margin-top: 28px;
+  margin-right: 8px;
+  font-size: 16px;
+  width: 34px;
+  height: 24px;
+}
+
+
+/* Navbar Profile User Image  */
+.navbar-profile img {
+  margin-top: 24px;
+  margin-right: 16px;
+  width: 29px;
+  height: 29px;
+  border-radius: 57px;
+}

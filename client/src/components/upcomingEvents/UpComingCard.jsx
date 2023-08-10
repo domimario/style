@@ -1,5 +1,6 @@
 import React from "react";
 import "./UpComingCard.css";
+import { useNavigate } from "react-router-dom";
 const UpComingCard = ({
   date,
   month,
@@ -12,21 +13,30 @@ const UpComingCard = ({
   const eventBg = {
     backgroundImage: `url(${eventImg})`,
   };
+
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/event");
+  };
   return (
     <>
-      <div className="upcoming-content" style={eventBg}>
+      <div
+        className="upcoming-content"
+        style={eventBg}
+        onClick={handleNavigate}
+      >
         <div className="event-date">
-          <p className="event-date-date"> {date}</p>
-          <br />
-          <p className="event-date-month">{month}</p>
+          <p className=" m-0"> {date}</p>
+          <p className="m-0">{month}</p>
         </div>
-        <div className="event-price">
+        <div className="price">
           <p>{price}</p>
         </div>
 
         <div className="event-content">
-          <h4 className="event-tittle">{tittle}</h4>
-          <p className="event-location-time">
+          <h4 className="tittle">{tittle}</h4>
+          <p className="location-time">
             {location} - {time}
           </p>
         </div>

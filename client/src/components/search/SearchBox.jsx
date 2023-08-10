@@ -1,5 +1,7 @@
 import React from "react";
 import "./SearchBox.css";
+import searchIcon from "../../assets/search.svg";
+import filterIcon from "../../assets/filter.svg";
 
 const SearchBox = (props) => {
   return (
@@ -7,11 +9,11 @@ const SearchBox = (props) => {
       <div className="search-box">
         <div className="search-content">
           <div className="search-icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <img src={searchIcon} alt="" />
             <input type="text" placeholder="Search all events..." />
           </div>
           <div className="search-filter">
-            <i class="fa-solid fa-sliders fa-rotate-90"></i>
+            <img src={filterIcon} alt="" />
           </div>
         </div>
       </div>

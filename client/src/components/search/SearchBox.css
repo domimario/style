@@ -25,10 +25,10 @@
 }
 
 /* Search Icon */
-.search-icon i {
+.search-icon img {
   color: #ffffff;
-  width: 14px;
-  height: 14px;
+  width: 24px;
+  height: 24px;
   margin-right: 10px;
 }
 
@@ -45,11 +45,8 @@
 }
 
 /* Search Filter */
-.search-filter i {
+.search-filter img {
   color: white;
-  width: 17px;
-  height: 17px;
-  border: 1px solid white;
-  border-radius: 1.45px;
-  padding: 1.5px 1.5px 1px 1px;
+  width: 24px;
+  height: 24px;
 }

@@ -13,19 +13,25 @@
 
 .event-date {
   color: #ffffff;
+  margin-left: 334px;
+  margin-right: 46px;
+  margin-top: 10px;
   font-family: Open Sans;
   border-radius: 23px;
   background: linear-gradient(#2c2c2c66, #72727200);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   width: 46px;
   height: 46px;
-  display: flex;
-  justify-content: flex-end;
   font-size: 14px;
   align-items: center;
   text-align: center;
 }
+.m-0 {
+  margin: 0px;
+}
 
-.event-price {
+.price {
   color: #2c2c2c;
   background-color: white;
   border-radius: 23px;
@@ -52,7 +58,7 @@
   color: #ffffff;
 }
 
-.event-tittle {
+.tittle {
   font-size: 18px;
   font-family: Open Sans;
   font-weight: normal;
@@ -63,7 +69,7 @@
   margin-bottom: 8px;
 }
 
-.event-location-time {
+.location-time {
   margin: 0;
   margin-left: 16px;
   margin-bottom: 16px;

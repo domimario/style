@@ -1,18 +1,16 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/navbar/Navbar";
-import SearchBox from "./components/search/SearchBox";
-import Home from "./pages/Home";
+import EventPage from "./pages/eventPage/EventPage";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar />
-
         <Routes>
           <Route element={<Home />} path={"/"} />
+          <Route element={<EventPage />} path={"/event"} />
         </Routes>
       </div>
     </BrowserRouter>

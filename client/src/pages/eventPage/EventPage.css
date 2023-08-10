@@ -1,0 +1,140 @@
+.event-page-container {
+  display: flex;
+  flex-direction: column;
+  width: 428px;
+  height: 925px;
+  position: relative;
+}
+
+.page-background {
+  background-size: cover;
+  width: 428px;
+  height: 585px;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+.page-head {
+  display: flex;
+  margin-left: 16px;
+}
+
+.page-back {
+  width: 42px;
+  height: 42px;
+  border-radius: 32px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 24px;
+}
+.back-icon {
+  color: white;
+  width: 24px;
+}
+.page-title {
+  margin-top: 33px;
+  margin-left: 134px;
+  font-size: 18px;
+  width: auto;
+  height: 24px;
+  font-family: Open Sans, "Bold";
+  color: white;
+}
+.event-page-details {
+  margin-left: 16px;
+  color: white;
+}
+
+.event-price {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-name {
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: bold;
+}
+
+.page-price {
+  background-color: #ffffff;
+  color: #2c2c2c;
+  border-radius: 23px;
+  width: 76px;
+  height: 33px;
+  font-size: 16px;
+  font-family: Open Sans;
+  margin-right: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.page-calendar {
+  display: flex;
+}
+.bg {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 32px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+}
+.calendar-bg img {
+  width: 24px;
+  height: 24px;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.spacer {
+  margin: 0 20px; /* Adjust the margin value as needed */
+}
+.m-0 {
+  margin: 0px;
+}
+
+.page-location {
+  display: flex;
+  align-items: center;
+}
+.page-about {
+  margin-right: 27px;
+  margin-left: 16px;
+  color: white;
+}
+
+.page-ticket {
+  display: flex;
+  align-items: center;
+}
+
+.order-ticket {
+  height: 48px;
+  width: 396px;
+  background-color: #026cdf;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+
+  margin-top: 55px;
+}

@@ -1,10 +1,10 @@
 import React from "react";
 import "./EventPage.css";
 import Text from "../../components/textEvent/Text";
-import eventBackground from "../../assets/img2.jpg";
-import calendarIcon from "../../assets/calendar.svg";
-import locationIcon from "../../assets/location.svg";
-import ticketIcon from "../../assets/ticket.svg";
+import eventBackground from "../../assets/eventsImage/img2.jpg";
+import calendarIcon from "../../assets/icons/calendar.svg";
+import locationIcon from "../../assets/icons/location.svg";
+import ticketIcon from "../../assets/icons/ticket.svg";
 import { useNavigate } from "react-router-dom";
 
 const EventPage = (props) => {

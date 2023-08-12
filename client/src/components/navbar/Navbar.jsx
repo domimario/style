@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import ProfileIcon from "../../assets/Hasbulla.jpg";
+import ProfileIcon from "../../assets/eventsImage/Hasbulla.jpg";
 
 const Navbar = (props) => {
   return (

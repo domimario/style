@@ -1,7 +1,7 @@
 import React from "react";
 import "./SearchBox.css";
-import searchIcon from "../../assets/search.svg";
-import filterIcon from "../../assets/filter.svg";
+import searchIcon from "../../assets/icons/search.svg";
+import filterIcon from "../../assets/icons/filter.svg";
 
 const SearchBox = (props) => {
   return (

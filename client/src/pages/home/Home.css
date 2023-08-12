@@ -1,13 +1,12 @@
+.home {
+  margin-left: 16px;
+}
+
 main h3 {
   color: white;
   font-size: 18px;
   font-family: Open Sans, "SemiBold";
-  margin-top: 16px;
   margin-bottom: 16px;
-}
-
-.suggested-tittle {
-  margin-left: 16px;
 }
 
 .suggested-card {
@@ -19,10 +18,6 @@ main h3 {
 
 .category {
   display: flex;
-}
-
-.upcoming-events {
-  margin-left: 16px;
 }
 
 .upcoming-events-text {

@@ -8,14 +8,10 @@ const SearchBox = (props) => {
     <>
       <div className="search-box">
         <div className="search-content">
-          <div className="search-icon">
-            <img src={searchIcon} alt="" />
-            <input type="text" placeholder="Search all events..." />
-          </div>
-          <div className="search-filter">
-            <img src={filterIcon} alt="" />
-          </div>
+          <img src={searchIcon} alt="" className="search-icon" />
+          <input type="text" placeholder="Search all events..." className="search-input" />
         </div>
+        <img src={filterIcon} alt="" className="search-filter" />
       </div>
     </>
   );

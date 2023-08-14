@@ -15,27 +15,29 @@ const UpComingCard = ({
   };
 
   const navigate = useNavigate();
-
   const handleNavigate = () => {
     navigate("/event");
   };
+
   return (
     <>
-      <div
-        className="upcoming-content"
-        style={eventBg}
-        onClick={handleNavigate}
-      >
+      <div className="event">
+        <div
+          className="event-background"
+          style={eventBg}
+          onClick={handleNavigate}
+        ></div>
         <div className="event-date">
-          <p className=" m-0"> {date}</p>
-          <p className="m-0">{month}</p>
+          <p className="date"> {date}</p>
+          <p className="month">{month}</p>
         </div>
-        <div className="price">
-          <p>{price}</p>
+
+        <div className="event-price">
+          <p className="price">{price}</p>
         </div>
 
         <div className="event-content">
-          <h4 className="tittle">{tittle}</h4>
+          <h4 className="title">{tittle}</h4>
           <p className="location-time">
             {location} - {time}
           </p>

@@ -1,76 +1,106 @@
-.upcoming-content {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.event {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
   width: 396px;
   height: 328px;
-  background-size: cover;
-  position: relative;
-  opacity: 1;
   border-radius: 5px;
   margin-bottom: 16px;
 }
 
+.event-background {
+  width: 396px;
+  height: 328px;
+  background-size: cover;
+  position: absolute;
+  overflow: hidden;
+}
 .event-date {
-  color: #ffffff;
   margin-left: 334px;
-  margin-right: 46px;
   margin-top: 10px;
+  margin-right: 16px;
+  padding: 7px 11px;
   font-family: Open Sans;
-  border-radius: 23px;
-  background: linear-gradient(#2c2c2c66, #72727200);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   width: 46px;
   height: 46px;
-  font-size: 14px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-}
-.m-0 {
-  margin: 0px;
+  border-radius: 23px;
+  background: transparent linear-gradient(135deg, #2C2C2C66 0%, #72727200 100%) 0% 0% no-repeat padding-box;
+  border-radius: 23px;
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.price {
-  color: #2c2c2c;
-  background-color: white;
-  border-radius: 23px;
-  width: 76px;
-  height: 33px;
-  display: flex;
-  align-items: center;
+.date {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+}
+.month {
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 13px;
+}
+
+.event-price {
+  z-index: 1;
   justify-content: center;
   position: absolute;
   top: 202px;
-  right: 33px;
-  z-index: 1;
-  font-size: 14px;
+  right: 16px;
+  border-radius: 23px;
+  height: 36px;
+  width: 76px;
+  background-color: #fff;
+  color: #2c2c2c;
   font-family: Open Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
 }
 
 .event-content {
-  width: 396px;
+  background-color: linear-gradient(
+    to bottom,
+    rgba(44, 44, 44, 0.4),
+    rgba(114, 114, 114, 0)
+  );
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(5px);
+  width: 100%;
   height: 110px;
-  background: linear-gradient(#2c2c2c66, #72727200);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #ffffff;
+  padding-left: 16px;
 }
 
-.tittle {
-  font-size: 18px;
+.title {
   font-family: Open Sans;
   font-weight: normal;
-  margin-left: 16px;
-  width: auto;
-  height: auto;
-  margin-top: 16px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 28px;
   margin-bottom: 8px;
 }
 
 .location-time {
-  margin: 0;
-  margin-left: 16px;
-  margin-bottom: 16px;
+  font-size: Open Sans;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 28px;
 }

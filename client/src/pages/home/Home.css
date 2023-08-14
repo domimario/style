@@ -1,35 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .home {
   margin-left: 16px;
 }
 
-main h3 {
+.suggested-title {
   color: white;
+  font-family: Open Sans;
+  font-weight: bold;
   font-size: 18px;
-  font-family: Open Sans, "SemiBold";
+  line-height: 24px;
   margin-bottom: 16px;
 }
-
 .suggested-card {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   scroll-behavior: auto;
   overflow-y: auto;
   scroll-snap-type: x mandatory;
 }
 
-.category {
-  display: flex;
+.upcoming-title {
+  color: #fff;
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 16px;
 }
 
-.upcoming-events-text {
-  margin: 0;
+.category {
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  overflow-y: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.sub-text {
   color: #cccccc;
-  width: 119px;
-  height: 20px;
   font-family: Open Sans;
   font-size: 14px;
   font-weight: normal;
-}
-
-.events-card {
-  margin-top: 24px;
+  line-height: 19px;
+  margin-bottom: 24px;
 }

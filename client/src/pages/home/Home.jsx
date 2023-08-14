@@ -18,49 +18,45 @@ const Home = (props) => {
         <Navbar />
         <SearchBox />
         <main>
-          <h3 className="suggested-tittle">Suggested</h3>
+          <h3 className="suggested-title">Suggested</h3>
           <div className="suggested-card">
             <SuggestedCard
-              date={"11 Aug"}
-              time={"20-00"}
-              tittle={"We're all alone in this together UK tour 2022"}
+              date={"24 Feb"}
+              time={"19-30"}
+              title={"Dave - We're all alone in this together UK tour 2022"}
               bgImage={Suggested1}
             />
             <SuggestedCard
-              date={"11 Aug"}
-              time={"19-45"}
-              tittle={"We're all alone in this together UK tour 2022"}
+              date={"12 Aug"}
+              time={"20-00"}
+              title={"Dave - We're all alone in this together UK tour 2022"}
               bgImage={Suggested2}
             />
             <SuggestedCard
-              date={"11 Aug"}
-              time={"19-45"}
-              tittle={"We're all alone in this together UK tour 2022"}
+              date={"13 Aug"}
+              time={"20-00"}
+              title={"Dave - We're all alone in this together UK tour 2022"}
               bgImage={Suggested1}
             />
-            <SuggestedCard
-              date={"11 Aug"}
-              time={"19-45"}
-              tittle={"We're all alone in this together UK tour 2022"}
-              bgImage={EventPhoto2}
-            />
           </div>
+
           <div className="upcoming-events">
-            <h3>Upcoming events</h3>
+            <h3 className="upcoming-title">Upcoming events</h3>
             <div className="category">
-              <CategoryEvents category={"All"} isAll={true} />
+              <CategoryEvents category={"All"} />
               <CategoryEvents category={"Free"} />
               <CategoryEvents category={"Limited"} />
               <CategoryEvents category={"Concert"} />
               <CategoryEvents category={"Festival"} />
+              <CategoryEvents category={"Electronic"} />
             </div>
-            <p className="upcoming-events-text">Total events: 150</p>
+            <p className="sub-text">Total events: 150</p>
             <div className="events-card">
               <UpComingCard
                 date={"02"}
                 month={"Sep"}
-                price={"45.00$"}
-                tittle={"Dave - We're all alone in this together UK tour 2022"}
+                price={"$45.00"}
+                tittle={"Dave"}
                 location={"Amsterdam,Netherlands"}
                 time={"10:00 PM"}
                 eventImg={EventPhoto1}

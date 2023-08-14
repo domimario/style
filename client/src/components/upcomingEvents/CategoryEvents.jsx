@@ -1,11 +1,9 @@
 import React from "react";
 import "./CategoryEvents.css";
-const CatergoryEvents = ({ category, isAll }) => {
+const CatergoryEvents = ({ category }) => {
   return (
     <>
-      <div className={`category-events ${isAll ? "all" : ""}`}>
-        <button className="category-button">{category}</button>
-      </div>
+      <button className="category-button">{category}</button>
     </>
   );
 };

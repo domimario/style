@@ -2,25 +2,12 @@
   margin-right: 12px;
   margin-bottom: 16px;
   font-family: Open Sans;
+  font-weight: normal;
   font-size: 16px;
-  padding: 6px 16px 6px 16px;
-  width: auto;
-  height: 34px;
+  line-height: 22px;
+  padding: 6px 16px;
   border-radius: 5px;
   color: #6b6a6e;
   background-color: #1e1d23;
   border: none;
-}
-
-.category-events.all .category-button {
-  /* Your unique styles for the first category */
-  background-color: #026cdf;
-  color: white;
-  filter: drop-shadow(0px 3px 6px #00000014);
-  width: 51px;
-  height: 34px;
-  font-size: 16px;
-  font-family: Open Sans, "san-serif";
-  font-weight: normal;
-  padding: 6px 16px 6px 16px;
 }

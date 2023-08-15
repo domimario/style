@@ -5,15 +5,19 @@ import filterIcon from "../../assets/icons/filter.svg";
 
 const SearchBox = (props) => {
   return (
-    <>
+    <div className="search-container">
       <div className="search-box">
         <div className="search-content">
-          <img src={searchIcon} alt="" className="search-icon" />
-          <input type="text" placeholder="Search all events..." className="search-input" />
+          <img src={searchIcon} alt="Search icon" className="search-icon" />
+          <input
+            type="text"
+            placeholder="Search all events..."
+            className="search-input"
+          />
         </div>
-        <img src={filterIcon} alt="" className="search-filter" />
+        <img src={filterIcon} alt="filter icon" className="search-filter" />
       </div>
-    </>
+    </div>
   );
 };
 export default SearchBox;

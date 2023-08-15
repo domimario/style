@@ -5,13 +5,8 @@
 }
 
 .app-name {
-  font-family: Open Sans, sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  color: #ffffff;
   margin-top: 25px;
   margin-bottom: 25px;
-  line-height: 27px;
 }
 
 .navbar-profile {
@@ -20,21 +15,29 @@
 }
 
 .profile-name {
-  font-family: Open Sans, sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  color: #ffffff;
   margin-top: 28px;
   margin-bottom: 27px;
   margin-right: 8px;
-  line-height: 22px;
 }
 
 .profile-img {
   margin-top: 24px;
-  margin-right: 16px;
   margin-bottom: 24px;
   width: 29px;
   height: 29px;
   border-radius: 57px;
+}
+
+@media screen and (min-width: 1280px) {
+  .app-name {
+    margin-top: 32px;
+  }
+  .profile-name {
+    font-size: 18px;
+    margin-top: 33px;
+  }
+  .profile-img {
+    width: 42px;
+    height: 42px;
+  }
 }

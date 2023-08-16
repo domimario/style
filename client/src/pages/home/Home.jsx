@@ -10,15 +10,27 @@ import EventPhoto3 from "../../assets/eventsImage/img3.jpg";
 import CategoryEvents from "../../components/upcomingEvents/CategoryEvents";
 import UpComingCard from "../../components/upcomingEvents/UpComingCard";
 import Navbar from "../../components/navbar/Navbar";
+import Text from "../../components/text/Text";
 
 const Home = (props) => {
   return (
     <>
       <div className="home">
         <Navbar />
+        <hr className="show-web" />
         <SearchBox />
         <main>
-          <h3 className="suggested-title">Suggested</h3>
+          <div className="suggested-title">
+            <Text
+              text={"Suggested"}
+              family={"open-sans"}
+              lineheight={"l24"}
+              size={"s18"}
+              weight={"bold"}
+              color={"white"}
+            />
+          </div>
+
           <div className="suggested-card">
             <SuggestedCard
               date={"24 Feb"}
@@ -41,7 +53,16 @@ const Home = (props) => {
           </div>
 
           <div className="upcoming-events">
-            <h3 className="upcoming-title">Upcoming events</h3>
+            <div className="upcoming-title">
+              <Text
+                text={"Upcoming events"}
+                family={"open-sans"}
+                lineheight={"l24"}
+                size={"s18"}
+                weight={"bold"}
+                color={"white"}
+              />
+            </div>
             <div className="category">
               <CategoryEvents category={"All"} />
               <CategoryEvents category={"Free"} />
@@ -50,7 +71,17 @@ const Home = (props) => {
               <CategoryEvents category={"Festival"} />
               <CategoryEvents category={"Electronic"} />
             </div>
-            <p className="sub-text">Total events: 150</p>
+
+            <div className="sub-text">
+              <Text
+                text={"Total events: 150"}
+                family={"open-sans"}
+                lineheight={"l19"}
+                size={"s14"}
+                weight={"regular"}
+                color={"lightgray"}
+              />
+            </div>
             <div className="events-card">
               <UpComingCard
                 date={"02"}
@@ -65,7 +96,7 @@ const Home = (props) => {
               <UpComingCard
                 date={"02"}
                 month={"Sep"}
-                price={"45.00$"}
+                price={"$45.00"}
                 tittle={"Dave"}
                 location={"Amsterdam,Netherlands"}
                 time={"10:00 PM"}
@@ -75,7 +106,7 @@ const Home = (props) => {
               <UpComingCard
                 date={"02"}
                 month={"Sep"}
-                price={"45.00$"}
+                price={"$45.00"}
                 tittle={"Dave"}
                 location={"Amsterdam,Netherlands"}
                 time={"10:00 PM"}

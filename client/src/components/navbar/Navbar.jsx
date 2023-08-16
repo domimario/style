@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import ProfileIcon from "../../assets/eventsImage/Hasbulla.jpg";
 import Text from "../text/Text";
 const Navbar = (props) => {
+  const [isSmall, setIsSmall] = useState(window.innerWidth <= 700);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmall(window.innerWidth <= 700);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <nav className="navbar">
       <div className="app-name">
@@ -17,17 +29,16 @@ const Navbar = (props) => {
       </div>
 
       <div className="navbar-profile">
-        <h4 className="profile-name">
+        <div className="profile-name">
           <Text
             text={"John"}
             family={"open-sans"}
             weight={"regular"}
-            size={"s16"}
-            lineheight={"l22"}
+            size={isSmall ? "s16" : "s18"}
+            lineheight={isSmall ? "l22" : "l24"}
             color={"white"}
           />
-        </h4>
-
+        </div>
         <img src={ProfileIcon} alt="Profile-Icon" className="profile-img" />
       </div>
     </nav>
